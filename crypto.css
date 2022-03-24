@@ -1,0 +1,668 @@
+/*Rubik font family */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/*globals*/
+
+body {
+    background-color: #dbd7d2;
+    min-height: 1080px;
+    min-width: 1920px;
+    margin-right: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+img article h2 table {
+    display: inline;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#theme-changer {
+    position: absolute;
+    background-color: #6C5859;
+    border-radius: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 8;
+    grid-column: 1/8;
+    background-color: #cacaca;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 220px;
+    font-family: "rubik", sans-serif;
+}
+
+footer p {
+    font-size: 16pt;
+}
+
+footer a:hover {
+    color: #141824;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1 span {
+    color: rgb(200 30 15);
+    padding-bottom: 10%;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+}
+
+h3 {
+    padding-left: 1%;
+    font-size: 26px;
+}
+
+#siteName {
+    font-family: "impact", "Rubik", sans-serif;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+.pageName {
+    font-size: 17pt;
+    color: black;
+    font-family: "impact", sans-serif;
+}
+
+#logoContainer {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.dark #theme-changer {
+    background-color: #202020;
+}
+
+.gridForBody {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 14%);
+    background-color: #dbd7d2;
+    font-family: "Rubik", sans-serif;
+    padding: 0.5% 2.5% 0.5% 2.5%;
+    font-size: 25px;
+}
+
+.flexForNavbar {
+    display: flex;
+    background-color: #886E70;
+    border-radius: 5px;
+    padding-left: 5px;
+    line-height: 0;
+    font-family: "rubik";
+}
+
+.flexForNavbar figure {
+    flex: 2;
+    padding-left: 7px;
+    font-size: 25px;
+    font-weight: 10;
+}
+
+.flexForNavbar button {
+    flex: 2;
+    background-color: #886E70;
+    border: none;
+    font-size: 15pt;
+    padding-top: 0px;
+}
+
+.flexForNavbar button:hover {
+    text-decoration: red wavy underline;
+}
+
+.navbar-link {
+    flex: 1;
+    padding-top: 35px;
+    font-size: 16pt;
+    color: black;
+}
+
+.flexForNavbar a:hover {
+    text-decoration: underline;
+    color: #FDEE30;
+    font-weight: bold;
+}
+
+.gridForBody h1 {
+    font-size: 44pt;
+    grid-column: 1/4;
+    padding-top: 20px;
+}
+
+#subtitleText {
+    font-size: 20pt;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    color: black;
+    text-align: left;
+}
+
+#subtitleText h2 {
+    margin: 0;
+}
+
+#logo,
+img {
+    text-align: center;
+    height: 25px;
+    width: 25px;
+}
+
+.divForFooter1 {
+    border-right: solid blue 3px;
+}
+
+.divForFooter1 p {
+    padding-left: 10px;
+    font-size: 18pt;
+}
+
+.divForFooter1 p a {
+    color: #660000;
+    padding-left: 10px;
+}
+
+.divForFooter2 p {
+    padding-left: 10px;
+    font-size: 18pt;
+}
+
+.divForFooter2 p a {
+    color: #660000;
+    padding-left: 10px;
+}
+
+
+/*Home Page*/
+
+#homePageTable {
+    grid-column: 5/8;
+    grid-row: 2/7;
+    box-shadow: 6px 4px 8px black;
+    border-radius: 25px;
+    display: block;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    border-collapse: collapse;
+    height: 700px;
+    width: 600px;
+    object-fit: contain;
+    align-self: start;
+}
+
+#homePageTable td {
+    width: 50%;
+    text-align: left;
+    padding: 2% 2% 2% 2%;
+}
+
+#homePageTable th {
+    padding-bottom: 3%;
+    border-bottom: 2px solid black;
+}
+
+#getStartedButton {
+    border-radius: 25px;
+    font-size: 125%;
+    font-family: "rubik", sans-serif;
+    background-color: green;
+    box-shadow: 6px 4px 8px black;
+    height: 76px;
+    width: 180px;
+    color: white;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.spacing {
+    padding-bottom: 2%;
+}
+
+.firstLine {
+    font-size: 30px;
+    padding: 2% 0 2% 0;
+}
+
+.percentageCash {
+    color: green;
+    border-left: 2px solid black;
+}
+
+.tickerSymbol {
+    color: darkred;
+    float: right;
+    padding-right: 2%;
+}
+
+#stockgraphChart {
+    grid-row: 2/6;
+    grid-column: 2/6;
+    height: 80%;
+    width: 100%;
+    padding-top: 20%;
+}
+
+
+/*Future page*/
+
+#borderTextFuture {
+    grid-column: 1/5;
+    grid-row: 3/6;
+    border-radius: 25px;
+    background-color: #e0e0e0;
+    box-shadow: 6px 4px 8px;
+    line-height: 2;
+    object-fit: contain;
+    align-self: start;
+}
+
+#borderTextFuture p {
+    padding: 0 2.5% 0 2.5%;
+}
+
+#listOfCoinsFuture {
+    grid-column: 6/8;
+    grid-row: 2/5;
+    border-radius: 25px;
+    background-color: #e0e0e0;
+    box-shadow: 6px 4px 8px;
+    width: 500px;
+    object-fit: contain;
+    align-self: start;
+}
+
+#listOfCoinsFuture ul {
+    list-style-type: "👨‍💻";
+}
+
+#listUnorderedCoins ul {
+    width: 420px;
+    margin: 2.5% 2.5% 4% 4%;
+}
+
+#videoFuture {
+    width: 200px;
+    padding-left: 45%;
+    height: 300px;
+}
+
+
+/*Help page*/
+
+#helpInfo {
+    font-size: 75%;
+    grid-row: 3/6;
+    grid-column: 1/4;
+    background-color: #e0e0e0;
+    box-shadow: 6px 4px 8px;
+    border-radius: 25px;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    line-height: 2;
+    object-fit: contain;
+    align-self: start;
+}
+
+#helpVideo {
+    height: 360px;
+}
+
+#help {
+    grid-row: 2/6;
+    grid-column: 6/8;
+    box-shadow: 6px 4px 8px;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    padding: 5%;
+    text-align: center;
+    object-fit: contain;
+    align-self: start;
+}
+
+.audio {
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+/*Investing Page*/
+
+#textInvesting1 {
+    font-size: 100%;
+    grid-row: 3/7;
+    grid-column: 1/4;
+    background-color: #e0e0e0;
+    box-shadow: 6px 4px 8px;
+    border-radius: 25px;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    line-height: 2;
+    object-fit: contain;
+    align-self: start;
+}
+
+#textInvesting2 {
+    grid-row: 2/6;
+    grid-column: 5/8;
+    box-shadow: 6px 4px 8px;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    padding: 5%;
+    line-height: 2;
+    object-fit: contain;
+    align-self: start;
+}
+
+
+/*Origin Page*/
+
+#originText {
+    font-size: 15pt;
+    grid-row: 3/6;
+    grid-column: 1/4;
+    background-color: #e0e0e0;
+    box-shadow: 6px 4px 8px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    object-fit: contain;
+    align-self: start;
+}
+
+#letter {
+    width: 600px;
+    height: 545px;
+    border-radius: 25px;
+}
+
+#letterSatoshi {
+    grid-row: 3/6;
+    grid-column: 5/7;
+    box-shadow: 6px 4px 8px black;
+    height: 630px;
+    width: 600px;
+    border-radius: 25px;
+    object-fit: contain;
+    align-self: start;
+}
+
+#bitcoinImage {
+    grid-row: 6/7;
+    height: 250px;
+    width: 250px;
+    border-radius: 13px;
+    margin-top: 25px;
+}
+
+
+/*Quiz Page*/
+
+#quizDiv {
+    font-family: "rubik", sans-serif;
+}
+
+#quizDiv h2 {
+    padding: 2.5%;
+}
+
+.box {
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 14px 10px 10px 2px black;
+    border: 5px dashed black;
+    background-color: #FA2742;
+    text-align: center;
+}
+
+.box h1,
+#question {
+    color: #000019;
+}
+
+.box input {
+    margin: 0 auto;
+}
+
+.box #question {
+    font-size: 14pt;
+    color: #000019;
+}
+
+#flexForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#quizBody #quizHeader {
+    color: black;
+}
+
+#quizLineInset {
+    border-top: solid black 6px;
+}
+
+#hidden {
+    display: none;
+}
+
+#hiddenList ol {
+    font-size: 15pt;
+}
+
+
+/*-----------Dark Mode-----------*/
+
+
+/*Globals*/
+
+.dark #logo {
+    filter: invert(1);
+}
+
+.dark #siteName {
+    color: white;
+}
+
+.dark .pageName {
+    color: black;
+}
+
+.dark .gridForBody {
+    background-color: #555555;
+    color: white;
+}
+
+.dark .flexForNavbar {
+    background-color: black;
+}
+
+.dark .flexForNavbar button {
+    color: white;
+    background-color: black;
+}
+
+.dark .flexForNavbar button:hover {
+    text-decoration: red wavy underline;
+}
+
+.dark .flexForNavbar .navbar-link {
+    color: white;
+}
+
+.dark .flexForNavbar a:hover {
+    color: #FDEE30;
+}
+
+.dark .gridForBody p span {
+    color: red;
+}
+
+.dark h1 span {
+    color: rgb(200 30 15);
+}
+
+.dark footer {
+    background-color: #1A2238;
+}
+
+.dark footer a:hover {
+    color: #141824;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dark .divForFooter1 {
+    border-right: solid red 3px;
+}
+
+.dark .divForFooter1 p a {
+    color: #ADADAD;
+}
+
+.dark .divForFooter2 p a {
+    color: #ADADAD;
+}
+
+dark nav {
+    z-index: 1;
+}
+
+
+/*Home Page*/
+
+.dark .percentageCash {
+    color: white;
+}
+
+.dark .tickerSymbol {
+    color: yellow;
+}
+
+
+/*Future Page*/
+
+.dark #borderTextFuture {
+    background-color: grey;
+    box-shadow: 6px 4px 8px black;
+}
+
+.dark #borderTextFuture p {
+    color: white;
+}
+
+.dark #listOfCoinsFuture {
+    background-color: grey;
+    box-shadow: 6px 4px 8px black;
+}
+
+.dark #subtitleText {
+    color: white;
+}
+
+
+/*Help Page*/
+
+.dark #helpInfo {
+    box-shadow: 6px 4px 8px black;
+    background-color: #7b7b7b;
+}
+
+.dark #help {
+    box-shadow: 6px 4px 8px black;
+    background-color: #7b7b7b;
+}
+
+
+/*Investing*/
+
+.dark #textInvesting1 {
+    background-color: grey;
+    box-shadow: 6px 4px 8px black;
+}
+
+.dark #textInvesting2 {
+    background-color: grey;
+    box-shadow: 6px 4px 8px black;
+}
+
+
+/*Origin*/
+
+.dark #originText {
+    background-color: #e0e0e0;
+    box-shadow: 6px 4px 8px black;
+    background-color: grey;
+}
+
+.dark #letter {
+    box-shadow: 6px 4px 8px black;
+}
+
+.dark h3 {
+    color: white;
+}
+
+
+/*Quiz*/
+
+.dark #hidden {
+    color: white;
+}
+
+.dark #quizDiv {
+    background-color: #333333;
+}
+
+.dark #quizDiv h2 {
+    color: white;
+}
+
+.dark .box {
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 14px 10px 10px 2px black;
+    border: 5px dashed #ff4c4c;
+    background-color: #000026;
+}
+
+.dark .box h1,
+#question {
+    color: #FDD935;
+}
+
+.dark .box #question {
+    color: #FDD935;
+}

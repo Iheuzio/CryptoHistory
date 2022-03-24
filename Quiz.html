@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+    <link href="crypto.css" rel="stylesheet" />
+    <script src="crypto.js" defer></script>
+</head>
+
+<body id="quizBody" onload="questionCounter();">
+    <header>
+        <nav>
+            <div class="flexForNavbar">
+                <figure id="logoContainer">
+                    <section>
+                        <h2 class="crypto-history" id="siteName">
+                            CryptoHistory
+                            <img id="logo" src="media/shape.png" alt="CryptoHistory logo" />
+                        </h2>
+                    </section>
+                </figure>
+                <button type="button" id="theme-changer">
+            Change Theme&#x2600;
+          </button>
+                <a href="index.html" class="navbar-link">Home&#128511;</a>
+                <a href="Investing.html" class="navbar-link">Investing&#128511;</a>
+                <a href="Origin.html" class="navbar-link">Origin&#128511;</a>
+                <a href="Future.html" class="navbar-link">Future&#128511;</a>
+                <a href="Help.html" class="navbar-link">Help&#128511;</a>
+                <a href="Quiz.html" class="navbar-link">Quiz&#128511;</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="quizDiv">
+            <h2>
+                Now, It's Time For A Fun Quiz!!!
+            </h2>
+            <form id="flexForm">
+                <div class="box">
+                    <h2 id="question-number">
+                        Quiz
+                    </h2>
+                    <div class="spacing">
+                        <label for="text-field" id="question">
+                Question
+              </label>
+                    </div>
+                    <div class="spacing">
+                        <input id="text-field" type="text" required />
+                    </div>
+                    <input id="button" type="submit" value="submit" onclick="clickButton();" />
+                </div>
+            </form>
+            <hr id="quizLineInset" />
+            <div id="hiddenList">
+                <button type="button" onclick="showTheAnswers();" id="answers-visible">
+            See the answers!
+          </button>
+                <ol id="hidden">
+                    <li>Bitcoin</li>
+                    <li>Japan</li>
+                    <li>Satoshi Nakamoto</li>
+                    <li>Ethereum</li>
+                    <li>No</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <div class="divForFooter1">
+                <h3>Sources:<br /></h3>
+                <p>
+                    <a href="https://www.fool.com/investing/2017/12/19/16-cryptocurrency-facts-you-should-know.aspx#:~:text=16%20Cryptocurrency%20Facts%20You%20Should%20Know%201%20Digital,about%20bitcoin%20--%20and%20...%20More%20items...%20" class="footer-link">The Motley Fool</a
+            ><br />
+            <a href="https://www.figma.com/community/file/978681400875967088"
+              >Open Logo - Free Logo Library</a
+            >
+          </p>
+        </div>
+
+        <div class="divForFooter2">
+          <h3>Navigation:<br /></h3>
+          <p>
+            <a href="#quizBody">Back to top</a>
+                </p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
